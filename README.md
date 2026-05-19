@@ -1,51 +1,34 @@
-# Boilerpipe Site Audit Test Site V2
+# Coffee Boilerpipe Test Site - Updated
 
-This static website is designed for GitHub Pages and for testing Site Audit features where Boilerpipe or fallback text extraction is used.
+This updated version keeps the same original pages but adds clear test cases.
 
-## Test goals
-
-### Similar / duplicate content
+## Similar / duplicate content
 
 Compare:
 
-- `espresso-review.html`
-- `espresso-guide.html`
+- espresso-machine-review.html
+- espresso-machine-guide.html
 
-Expected:
+Expected: these should be detected as similar because their main article text is intentionally very similar.
 
-- These two pages should be detected as similar because their main article text is highly overlapping.
-- Boilerplate header/sidebar/footer text should not be the main reason they are considered similar.
-
-### Link Opportunities
-
-Pages with unlinked mentions:
-
-- `espresso-review.html`
-- `espresso-guide.html`
-- `fallback-keyword-page.html`
+## Link Opportunities
 
 Unlinked phrases:
 
-- `coffee bean storage` should suggest `bean-storage.html`
-- `milk frothing basics` should suggest `milk-frothing.html`
-- `espresso-review` should suggest `espresso-review.html`
+- coffee bean storage -> coffee-beans.html
+- espresso-machine-review -> espresso-machine-review.html
+- milk frothing basics -> target page does not exist, useful as a negative/control case
 
-### Fallback text extraction
+Expected: Site Audit should detect unlinked mentions when the phrases are in extracted page text.
+
+## Fallback text extraction
 
 Use:
 
-- `fallback-keyword-page.html`
+- contact.html
 
-Expected:
+Expected: if Boilerpipe text is unavailable, simple HTML text extraction should still find coffee bean storage and espresso-machine-review.
 
-- If Boilerpipe text is unavailable or weak, simple HTML text extraction should still find:
-  - `coffee bean storage`
-  - `milk frothing basics`
+## Note
 
-## GitHub Pages
-
-1. Create a GitHub repository.
-2. Upload all files.
-3. Go to Settings > Pages.
-4. Deploy from the main branch root.
-5. Crawl the published GitHub Pages URL.
+Do not validate this only using a links CSV. Boilerpipe affects extracted page text, not normal link discovery.
