@@ -1,37 +1,51 @@
-# Boilerpipe Test Site
+# Boilerpipe Site Audit Test Site V2
 
-A small static website for testing Boilerpipe and Site Audit behavior.
+This static website is designed for GitHub Pages and for testing Site Audit features where Boilerpipe or fallback text extraction is used.
 
-## Test cases
+## Test goals
 
 ### Similar / duplicate content
 
 Compare:
 
-- `espresso-machine-review.html`
-- `espresso-machine-guide.html`
+- `espresso-review.html`
+- `espresso-guide.html`
 
-Both pages share some article text, but they also share repeated header/sidebar/footer boilerplate.
+Expected:
 
-Without Boilerpipe, template text can make the pages look more similar than they really are.
+- These two pages should be detected as similar because their main article text is highly overlapping.
+- Boilerplate header/sidebar/footer text should not be the main reason they are considered similar.
 
 ### Link Opportunities
 
-`espresso-machine-guide.html` contains these unlinked mentions:
+Pages with unlinked mentions:
 
-- `coffee bean storage` -> should suggest `coffee-beans.html`
-- `espresso-machine-review` -> should suggest `espresso-machine-review.html`
+- `espresso-review.html`
+- `espresso-guide.html`
+- `fallback-keyword-page.html`
 
-### Boilerplate-heavy layout
+Unlinked phrases:
 
-Each page contains repeated:
+- `coffee bean storage` should suggest `bean-storage.html`
+- `milk frothing basics` should suggest `milk-frothing.html`
+- `espresso-review` should suggest `espresso-review.html`
 
-- header navigation
-- sidebar popular posts
-- footer links
+### Fallback text extraction
 
-This helps test whether Boilerpipe removes non-main content correctly.
+Use:
+
+- `fallback-keyword-page.html`
+
+Expected:
+
+- If Boilerpipe text is unavailable or weak, simple HTML text extraction should still find:
+  - `coffee bean storage`
+  - `milk frothing basics`
 
 ## GitHub Pages
 
-Upload these files to a GitHub repository, then enable GitHub Pages from the repository settings.
+1. Create a GitHub repository.
+2. Upload all files.
+3. Go to Settings > Pages.
+4. Deploy from the main branch root.
+5. Crawl the published GitHub Pages URL.
