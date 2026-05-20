@@ -1,46 +1,29 @@
 # Boilerpipe-Resistant Static Website
 
-A GitHub-ready single-page website designed to be visually readable for people while avoiding a long, article-like HTML body that older content extraction tools such as Boilerpipe often rely on.
+A GitHub-ready single-page website with richer page structure: navigation links, image sections, lists, resource links, and footer content.
 
 ## Files
 
-- `index.html` — complete website in one file
+- `index.html` — complete website
+- `assets/signal-pattern.svg` — visual background image
+- `assets/orbit-pattern.svg` — visual background image
 - `.gitignore` — basic ignore rules
 - `LICENSE` — MIT license placeholder
 
 ## Run locally
 
-Open `index.html` in your browser.
-
-Or run a tiny local server:
+Open `index.html` in your browser, or run:
 
 ```bash
 python3 -m http.server 8080
 ```
 
-Then open:
-
-```text
-http://localhost:8080
-```
+Then visit `http://localhost:8080`.
 
 ## Deploy on GitHub Pages
 
-1. Create a new GitHub repository.
-2. Upload these files to the repository root.
-3. Go to **Settings → Pages**.
-4. Under **Build and deployment**, choose:
-   - Source: `Deploy from a branch`
-   - Branch: `main`
-   - Folder: `/root`
-5. Save.
+Upload all files to a GitHub repository root, then enable GitHub Pages from **Settings → Pages**.
 
-Your site will be published at:
+## Important note
 
-```text
-https://YOUR_USERNAME.github.io/YOUR_REPOSITORY/
-```
-
-## Notes
-
-This is not a security feature. It only reduces the usefulness of simple HTML text extraction. Anything visible in a browser can still be copied, screenshotted, OCRed, or read by more advanced crawlers.
+This design only reduces the usefulness of simple article extractors. It is not a security or privacy mechanism.
