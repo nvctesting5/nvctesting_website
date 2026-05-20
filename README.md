@@ -1,34 +1,46 @@
-# Coffee Boilerpipe Test Site - Updated
+# Boilerpipe-Resistant Static Website
 
-This updated version keeps the same original pages but adds clear test cases.
+A GitHub-ready single-page website designed to be visually readable for people while avoiding a long, article-like HTML body that older content extraction tools such as Boilerpipe often rely on.
 
-## Similar / duplicate content
+## Files
 
-Compare:
+- `index.html` — complete website in one file
+- `.gitignore` — basic ignore rules
+- `LICENSE` — MIT license placeholder
 
-- espresso-machine-review.html
-- espresso-machine-guide.html
+## Run locally
 
-Expected: these should be detected as similar because their main article text is intentionally very similar.
+Open `index.html` in your browser.
 
-## Link Opportunities
+Or run a tiny local server:
 
-Unlinked phrases:
+```bash
+python3 -m http.server 8080
+```
 
-- coffee bean storage -> coffee-beans.html
-- espresso-machine-review -> espresso-machine-review.html
-- milk frothing basics -> target page does not exist, useful as a negative/control case
+Then open:
 
-Expected: Site Audit should detect unlinked mentions when the phrases are in extracted page text.
+```text
+http://localhost:8080
+```
 
-## Fallback text extraction
+## Deploy on GitHub Pages
 
-Use:
+1. Create a new GitHub repository.
+2. Upload these files to the repository root.
+3. Go to **Settings → Pages**.
+4. Under **Build and deployment**, choose:
+   - Source: `Deploy from a branch`
+   - Branch: `main`
+   - Folder: `/root`
+5. Save.
 
-- contact.html
+Your site will be published at:
 
-Expected: if Boilerpipe text is unavailable, simple HTML text extraction should still find coffee bean storage and espresso-machine-review.
+```text
+https://YOUR_USERNAME.github.io/YOUR_REPOSITORY/
+```
 
-## Note
+## Notes
 
-Do not validate this only using a links CSV. Boilerpipe affects extracted page text, not normal link discovery.
+This is not a security feature. It only reduces the usefulness of simple HTML text extraction. Anything visible in a browser can still be copied, screenshotted, OCRed, or read by more advanced crawlers.
