@@ -1,29 +1,38 @@
-# Boilerpipe-Resistant Static Website
+# Image Gallery Boilerpipe Test Site
 
-A GitHub-ready single-page website with richer page structure: navigation links, image sections, lists, resource links, and footer content.
+A GitHub Pages-ready static website with an image gallery and captions.
 
-## Files
+## Main tests
 
-- `index.html` — complete website
-- `assets/signal-pattern.svg` — visual background image
-- `assets/orbit-pattern.svg` — visual background image
-- `.gitignore` — basic ignore rules
-- `LICENSE` — MIT license placeholder
+### Gallery captions
 
-## Run locally
+`gallery.html` has captions with unlinked mentions:
 
-Open `index.html` in your browser, or run:
+- `coffee bean storage`
+- `milk frothing basics`
 
-```bash
-python3 -m http.server 8080
-```
+### Link Opportunities
 
-Then visit `http://localhost:8080`.
+Expected:
 
-## Deploy on GitHub Pages
+- `coffee bean storage` should suggest `bean-storage.html`
+- `milk frothing basics` is intentionally unlinked and has no target page unless you add one
 
-Upload all files to a GitHub repository root, then enable GitHub Pages from **Settings → Pages**.
+### Similar content
 
-## Important note
+Compare:
 
-This design only reduces the usefulness of simple article extractors. It is not a security or privacy mechanism.
+- `gallery.html`
+- `espresso-review.html`
+
+They both mention beginner espresso setup, coffee bean storage, and milk frothing basics.
+
+### Boilerplate
+
+Repeated boilerplate appears in:
+
+- header navigation
+- sidebar
+- footer
+
+Boilerpipe should remove those and keep main article/gallery caption text.
