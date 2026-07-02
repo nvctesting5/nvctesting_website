@@ -9,13 +9,13 @@ User-agent: OAI-SearchBot
 Allow: /
 
 User-agent: ChatGPT-User
-Disallow: /
+Allow: /
 
 User-agent: Claude-SearchBot
-Disallow: /
+Allow: /
 
 User-agent: Claude-Web
-Disallow: /
+Allow: /
 
 User-agent: Claude-User
 Disallow: /
@@ -52,13 +52,13 @@ Disallow: /
 
 # AI training bots
 User-agent: GPTBot
-Disallow: /
+Allow: /
 
 User-agent: Google-Extended
-Disallow: /
+Allow: /
 
 User-agent: ClaudeBot
-Disallow: /
+Allow: /
 
 User-agent: anthropic-ai
 Disallow: /
