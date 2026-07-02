@@ -2,7 +2,7 @@ User-agent: GPTBot
 Disallow: /
 
 User-agent: GPTBot
-Disallow: /private/
+Disallow: /
 
 User-agent: ClaudeBot
 Allow: /
