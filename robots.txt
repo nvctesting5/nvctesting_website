@@ -1,74 +1,11 @@
-User-agent: Google
+User-agent: GPTBot
 Disallow: /
 
-User-agent: Google-Agen
+User-agent: GPTBot
+Disallow: /private/
+
+User-agent: ClaudeBot
 Disallow: /
 
-User-agent: OAI-Search
-Disallow: /
-
-User-agent: ChatGPT
-Disallow: /
-
-User-agent: Claude-Search
-Disallow: /
-
-User-agent: Claude-We
-Disallow: /
-
-User-agent: Claude-Use
-Disallow: /
-
-User-agent: Perplexity
-Disallow: /
-
-User-agent: Perplexity-Use
-Disallow: /
-
-User-agent: GitHubCopilot
-Disallow: /
-
-User-agent: Amazon
-Disallow: /
-
-User-agent: Amzn-Search
-Disallow: /
-
-User-agent: Amzn-Use
-Disallow: /
-
-User-agent: Apple
-Disallow: /
-
-User-agent: DuckAssist
-Disallow: /
-
-User-agent: Mistral
-Disallow: /
-
-User-agent: You
-Disallow: /
-
-User-agent: GPT
-Disallow: /
-
-User-agent: Google-Extend
-Disallow: /
-
-User-agent: Claude
-Disallow: /
-
-User-agent: anthropic
-Disallow: /
-
-User-agent: Meta-External
-Disallow: /
-
-User-agent: Applebot-Extend
-Disallow: /
-
-User-agent: xAI
-Disallow: /
-
-User-agent: Deepseek
-Disallow: /
+User-agent: ClaudeBot
+Allow: /
