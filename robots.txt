@@ -18,19 +18,19 @@ User-agent: Claude-Web
 Allow: /
 
 User-agent: Claude-User
-Disallow: /
+Allow: /
 
 User-agent: PerplexityBot
-Disallow: /
+Allow: /
 
 User-agent: Perplexity-User
-Disallow: /
+Allow: /
 
 User-agent: GitHubCopilotChat
-Disallow: /
+Allow: /
 
 User-agent: Amazonbot
-Disallow: /
+Allow: /
 
 User-agent: Amzn-SearchBot
 Disallow: /
@@ -61,13 +61,13 @@ User-agent: ClaudeBot
 Allow: /
 
 User-agent: anthropic-ai
-Disallow: /
+Allow: /
 
 User-agent: Meta-ExternalAgent
-Disallow: /
+Allow: /
 
 User-agent: Applebot-Extended
-Disallow: /
+Allow: /
 
 User-agent: xAI-Bot
 Disallow: /
