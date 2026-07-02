@@ -5,7 +5,7 @@ User-agent: GPTBot
 Disallow: /private/
 
 User-agent: ClaudeBot
-Disallow: /
+Allow: /
 
 User-agent: ClaudeBot
-Allow: /
+Disallow: /
