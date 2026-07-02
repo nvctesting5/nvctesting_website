@@ -1,76 +1,8 @@
-# AI search bots
-User-agent: Googlebot
-Allow: /
-
-User-agent: Google-Agent
-Allow: /
-
-User-agent: OAI-SearchBot
-Allow: /
-
-User-agent: ChatGPT-User
-Allow: /
-
-User-agent: Claude-SearchBot
-Allow: /
-
-User-agent: Claude-Web
-Allow: /
-
-User-agent: Claude-User
-Allow: /
-
-User-agent: PerplexityBot
-Allow: /
-
-User-agent: Perplexity-User
-Allow: /
-
-User-agent: GitHubCopilotChat
-Allow: /
-
-User-agent: Amazonbot
-Allow: /
-
-User-agent: Amzn-SearchBot
-Allow: /
-
-User-agent: Amzn-User
-Allow: /
-
-User-agent: Applebot
-Allow: /
-
-User-agent: DuckAssistBot
-Allow: /
-
-User-agent: MistralAI-User
-Allow: /
-
-User-agent: YouBot
-Allow: /
-
-# AI training bots
-User-agent: GPTBot
-Allow: /
-
-User-agent: Google-Extended
-Allow: /
-
-User-agent: ClaudeBot
-Allow: /
-
-User-agent: anthropic-ai
-Allow: /
-
-User-agent: Meta-ExternalAgent
-Allow: /
-
-User-agent: Applebot-Extended
-Allow: /
-
-User-agent: xAI-Bot
-Allow: /
-
-User-agent: DeepseekBot
-Allow: /
+User-agent: GPTBott
+Disallow: /
+User-agent: Claudebot
+Disallow: /
+User-agent: PerplexityBott
+Disallow: /
+User-agent: Google-Extend
+Disallow: /
