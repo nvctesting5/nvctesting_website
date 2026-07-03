@@ -1,12 +1,10 @@
-User-agent: SemrushBot
-Disallow: /
 User-agent: Applebot
 Disallow: /
-User-agent: AhrefsBot
+User-agent: Claude
 Disallow: /
-User-agent: MJ12bot
+User-agent: GPT
 Disallow: /
-User-agent: BingBot
+User-agent: Google
 Disallow: /
-User-agent: YandexBot
+User-agent: bot
 Disallow: /
