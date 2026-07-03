@@ -1,4 +1,4 @@
-User-agent: SemrushBot
+User-agent: SemrushBot, AhrefsBot
 Disallow: /
 User-agent: AhrefsBot
 Disallow: /
