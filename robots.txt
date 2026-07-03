@@ -1,4 +1,6 @@
-User-agent: SemrushBot, Applebot
+User-agent: SemrushBot
+Disallow: /
+User-agent: Applebot
 Disallow: /
 User-agent: AhrefsBot
 Disallow: /
