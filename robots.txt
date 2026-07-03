@@ -1,10 +1,4 @@
-User-agent: Applebot
-Disallow: /
-User-agent: Claude
-Disallow: /
 User-agent: GPT
-Disallow: /
-User-agent: Google
 Disallow: /
 User-agent: bot
 Disallow: /
