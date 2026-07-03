@@ -2,3 +2,7 @@ User-agent: GPT
 Disallow: /
 User-agent: bot
 Disallow: /
+User-agent: Amazonbot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
