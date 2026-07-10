@@ -1,7 +1,7 @@
 User-agent: Amazonbot
-Allow: /
+Disallow: /
 User-agent: ClaudeBot
-Allow: /
+Disallow: /
 User-agent: GPT
 Disallow: /
 User-agent: bot
