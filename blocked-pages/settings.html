@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crawl Settings — Lumio (Internal)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <nav>
+    <a href="../index.html" class="nav-logo">◈ <span>Lumio</span></a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../about/index.html">About</a></li>
+      <li><a href="../blog/index.html">Blog</a></li>
+      <li><a href="../products/index.html">Products</a></li>
+    </ul>
+  </nav>
+  <section class="hero">
+    <div class="hero-eyebrow">🔒 Internal page — blocked by robots.txt</div>
+    <h1><em>Crawl</em> settings</h1>
+    <p>This page is blocked from all crawlers via <code>Disallow: /blocked-pages/</code>. It is internally linked — giving Ahrefs a third blocked internal URL to count and surface in Link Explorer.</p>
+  </section>
+  <section class="section">
+    <div class="grid grid-3">
+      <div class="card">
+        <h3>⚙️ Ignore robots.txt</h3>
+        <p>When enabled in Project Settings, the 4 AI bot columns are not populated. This page tests that edge case.</p>
+      </div>
+      <div class="card">
+        <h3>🔄 Always-on audit</h3>
+        <p>Bot columns populate for both regular crawls and always-on audit. This blocked page should appear in both modes.</p>
+      </div>
+      <div class="card">
+        <h3>📈 Changes mode</h3>
+        <p>If this page's robots.txt rules change between crawls, Changes mode should reflect the delta.</p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p>Lumio — SA-55 QA Test Site · <strong>/blocked-pages/settings.html</strong> is blocked via robots.txt</p>
+  </footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>
