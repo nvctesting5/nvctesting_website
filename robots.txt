@@ -8,3 +8,4 @@ User-agent: bot
 Disallow: /
 User-agent: *
 Allow: /
+Disallow: /blocked-pages/
